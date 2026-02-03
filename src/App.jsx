@@ -9,7 +9,7 @@ import './App.css'
 
 function App() {
   const showCompany = (name, revenue) => {
-    return <div id={name}>{name} makes {revenue} every year</div>
+    return <div id={companies.name}>{name} makes {revenue} every year</div>
   }
 
    const getClassName = (temperature) => { 
