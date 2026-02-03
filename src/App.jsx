@@ -12,7 +12,14 @@ function App() {
     return <div id={name}>{name} makes {revenue} every year</div>
   }
 
+   const getClassName = (temperature) => { 
+    return <div id="weatherBox">
+      <p>{temperature < 15 ? "freezing" : temperature >= 15 && temperature < 30 ? "fair" : "hell-scape"}</p>
+    </div>
+   }
+
   return (
+    <>
     <div className="ex-space">
       <h4 className='ex-title'>Exercise 1</h4>
       <div className="exercise" id="ex-1">
@@ -21,6 +28,15 @@ function App() {
         ))}
       </div>
     </div>
+
+    <div className="ex-space">
+      <h4 className='ex-title'>Exercise 2</h4>
+      <div className="exercise" id="ex-2">
+        {getClassName(10)}
+        {getClassName(20)}
+        {getClassName(30)}
+      </div>
+    </div></>
   )
 }
 
