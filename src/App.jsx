@@ -5,6 +5,9 @@ import { Company } from "../components/Company";
 import { Wardrobe } from "../components/Wardrobe";
 import { Wardrobe2 } from "../components/Wardrobe2";
 import { Hudini } from "../components/Hudini";
+import { Landing } from "../components/Landing";
+import { Home } from "../components/Home";
+import { Item } from "../components/Item";
 
   let companies = [
     { name: "Tesla", revenue: 140 },
@@ -37,6 +40,17 @@ function App() {
           { type: "accessory", color: "sapphire", size: "" },
           { type: "accessory", color: "lilac", size: "" }
     ]
+
+    const [data, setData] = useState({
+      user: "Robyn",
+      store: [
+        { item: "XSPS Pro Player", price: 800, discount: 0.2, hottest: false },
+        { item: "Gizem Backwatch", price: 230, discount: 0.6, hottest: false },
+        { item: "Surround Sound Pelican", price: 3099, discount: 0.05, hottest: true }
+      ],
+  shouldDiscount: false,
+  currentPage: "Landing"
+});
 
   return (
     <>
@@ -84,7 +98,8 @@ function App() {
       <Hudini/>
 
       {/* exercise 2 */}
-      
+      <Landing name={data.user} store={data.store}/>
+      <Home store={data.store}/>
     </>
   )
 }
