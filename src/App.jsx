@@ -8,6 +8,8 @@ import { Hudini } from "../components/Hudini";
 import { Landing } from "../components/Landing";
 import { Home } from "../components/Home";
 import { Item } from "../components/Item";
+import Exercise1 from "../components/Exercise1";
+import Exercise2 from "../components/Exercise2";
 
   let companies = [
     { name: "Tesla", revenue: 140 },
@@ -97,10 +99,13 @@ function App() {
 
       {/* useState exercise */}
       {/* exercise 1 */}
-      <Hudini/>
+      {/* <Hudini/> */}
 
       {/* exercise 2 */}
-    {data.currentPage === "Landing" ? <Landing name={data.user} store={data.store}/> : <Home store={data.store} currentPage={data.currentPage} shouldDiscount={data.shouldDiscount}/>}
+      {/* {data.currentPage === "Landing" ? <Landing name={data.user} store={data.store}/> : <Home store={data.store} currentPage={data.currentPage} shouldDiscount={data.shouldDiscount}/>} */}
+
+      <Exercise1/>
+      <Exercise2/>
     </>
   )
 }
