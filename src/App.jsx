@@ -48,8 +48,8 @@ function App() {
         { item: "Gizem Backwatch", price: 230, discount: 0.6, hottest: false },
         { item: "Surround Sound Pelican", price: 3099, discount: 0.05, hottest: true }
       ],
-      shouldDiscount: true,
-      // shouldDiscount: false,
+      // shouldDiscount: true,
+      shouldDiscount: false,
       // currentPage: "Landing"
       currentPage: "Home"
     });
