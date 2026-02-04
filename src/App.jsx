@@ -48,9 +48,11 @@ function App() {
         { item: "Gizem Backwatch", price: 230, discount: 0.6, hottest: false },
         { item: "Surround Sound Pelican", price: 3099, discount: 0.05, hottest: true }
       ],
-  shouldDiscount: false,
-  currentPage: "Landing"
-});
+      shouldDiscount: true,
+      // shouldDiscount: false,
+      // currentPage: "Landing"
+      currentPage: "Home"
+    });
 
   return (
     <>
@@ -98,8 +100,7 @@ function App() {
       <Hudini/>
 
       {/* exercise 2 */}
-      <Landing name={data.user} store={data.store}/>
-      <Home store={data.store}/>
+    {data.currentPage === "Landing" ? <Landing name={data.user} store={data.store}/> : <Home store={data.store} currentPage={data.currentPage} shouldDiscount={data.shouldDiscount}/>}
     </>
   )
 }
