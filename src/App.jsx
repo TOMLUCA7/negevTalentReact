@@ -1,3 +1,4 @@
+import Box from '../components/Box'
 import './App.css'
 
   let companies = [
@@ -20,23 +21,31 @@ function App() {
 
   return (
     <>
-    <div className="ex-space">
-      <h4 className='ex-title'>Exercise 1</h4>
-      <div className="exercise" id="ex-1">
-        {companies.map((item) => (
-          showCompany(item.name, item.revenue)
-        ))}
+      {/* <div className="ex-space">
+        <h4 className='ex-title'>Exercise 1</h4>
+        <div className="exercise" id="ex-1">
+          {companies.map((item) => (
+            showCompany(item.name, item.revenue)
+          ))}
+        </div>
       </div>
-    </div>
 
-    <div className="ex-space">
-      <h4 className='ex-title'>Exercise 2</h4>
-      <div className="exercise" id="ex-2">
-        {getClassName(10)}
-        {getClassName(20)}
-        {getClassName(30)}
-      </div>
-    </div></>
+      <div className="ex-space">
+        <h4 className='ex-title'>Exercise 2</h4>
+        <div className="exercise" id="ex-2">
+          {getClassName(10)}
+          {getClassName(20)}
+          {getClassName(30)}
+        </div>
+      
+      </div> */}
+
+      
+      <Box text="fresh" color="green" />
+      <Box text="calm" color="blue" />
+      <Box text="adventurous" color="pink" />
+      <Box text="happy" color="purple" />
+    </>
   )
 }
 
