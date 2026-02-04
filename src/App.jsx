@@ -3,6 +3,8 @@ import Box from '../components/Box'
 import './App.css'
 import { Company } from "../components/Company";
 import { Wardrobe } from "../components/Wardrobe";
+import { Wardrobe2 } from "../components/Wardrobe2";
+import { Hudini } from "../components/Hudini";
 
   let companies = [
     { name: "Tesla", revenue: 140 },
@@ -25,15 +27,16 @@ function App() {
     let companies = [
         { name: "Tesla", revenue: 140 },
         { name: "Microsoft", revenue: 300 },
-        { name: "Google", revenue: 600 }]
+        { name: "Google", revenue: 600 }
+    ]
 
-        let wardrobe = [
+    let wardrobe = [
           { type: "shirt", color: "red", size: "Medium" },
           { type: "shirt", color: "blue", size: "Medium" },
           { type: "pants", color: "blue", size: "Medium" },
           { type: "accessory", color: "sapphire", size: "" },
           { type: "accessory", color: "lilac", size: "" }
-        ]
+    ]
 
   return (
     <>
@@ -63,7 +66,7 @@ function App() {
       <Box text="happy" color="purple" /> */}
 
       {/* props exercise */}
-
+{/* 
       {companies.map((item) => (
         <Company key={item.name} name={item.name.toUpperCase()}/>
       ))}
@@ -71,6 +74,17 @@ function App() {
       {wardrobe.map((item) => (
         <Wardrobe key={item.name} type={item.type} color={item.color}/>
       ))}
+
+      {wardrobe.map((item) => (
+        <Wardrobe2 key={item.name} type={item.type} color={item.color}/>
+      ))} */}
+
+      {/* useState exercise */}
+      {/* exercise 1 */}
+      <Hudini/>
+
+      {/* exercise 2 */}
+      
     </>
   )
 }
