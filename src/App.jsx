@@ -10,6 +10,7 @@ import { Home } from "../components/Home";
 import { Item } from "../components/Item";
 import Exercise1 from "../components/Exercise1";
 import Exercise2 from "../components/Exercise2";
+import DataFlowExercise1 from "../components/DataFlowExercise1";
 
   let companies = [
     { name: "Tesla", revenue: 140 },
@@ -104,8 +105,10 @@ function App() {
       {/* exercise 2 */}
       {/* {data.currentPage === "Landing" ? <Landing name={data.user} store={data.store}/> : <Home store={data.store} currentPage={data.currentPage} shouldDiscount={data.shouldDiscount}/>} */}
 
-      <Exercise1/>
-      <Exercise2/>
+      {/* <Exercise1/>
+      <Exercise2/> */}
+
+      <DataFlowExercise1/>
     </>
   )
 }
