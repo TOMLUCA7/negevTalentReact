@@ -11,6 +11,7 @@ import { Item } from "../components/Item";
 import Exercise1 from "../components/Exercise1";
 import Exercise2 from "../components/Exercise2";
 import DataFlowExercise1 from "../components/DataFlowExercise1";
+import DataFlowExercise2 from "../components/DataFlowExercise2";
 
   let companies = [
     { name: "Tesla", revenue: 140 },
@@ -108,7 +109,9 @@ function App() {
       {/* <Exercise1/>
       <Exercise2/> */}
 
-      <DataFlowExercise1/>
+      {/* <DataFlowExercise1/> */}
+
+      <DataFlowExercise2/>
     </>
   )
 }
