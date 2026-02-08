@@ -51,9 +51,15 @@ const DataFlowExercise2 = () => {
   return (
    <>
      {
-        data.displayConversation === null ? <List user={data.conversations.map((c) => c.user)} displayConvo={displayConvo}/> 
-        : <Conversation convo={data.conversations.find((c) => c.user === data.displayConversation).convo} 
-        sender={data.conversations.find((c) => c.user === data.displayConversation).sender} backToContacts={backToContacts}/>
+        data.displayConversation === null ? 
+            <List 
+                user={data.conversations.map((c) => c.user)} 
+                displayConvo={displayConvo}/> 
+        : <Conversation 
+            convo={data.conversations.find((c) => c.user === data.displayConversation).convo} 
+            sender={data.conversations.find((c) => c.user === data.displayConversation).sender} 
+            backToContacts={backToContacts}
+        />
     }
    </>
   )
