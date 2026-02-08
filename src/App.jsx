@@ -115,7 +115,7 @@ function App() {
 
       {/* <DataFlowExercise2/> */}
 
-      <Textarea/>
+      {/* <Textarea/> */}
     </>
   )
 }

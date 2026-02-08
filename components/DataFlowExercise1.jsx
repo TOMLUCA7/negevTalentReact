@@ -15,14 +15,14 @@ const DataFlowExercise1 = () => {
     const shiftImageBack = () => {
         setData({
             ...data,
-            currentImg: data.currentImg - 1
+            currentImg: data.currentImg - 1 < 0 ? data.images.length - 1 : data.currentImg - 1
         })
     }
 
     const shiftImageForward = () => {
         setData({
             ...data,
-            currentImg: data.currentImg + 1
+            currentImg: data.currentImg + 1 > data.images.length - 1 ? 0 : data.currentImg + 1
         })
     }
 
