@@ -57,7 +57,7 @@ const DataFlowExercise2 = () => {
                 displayConvo={displayConvo}/> 
         : <Conversation 
             convo={data.conversations.find((c) => c.user === data.displayConversation).convo} 
-            sender={data.conversations.find((c) => c.user === data.displayConversation).sender} 
+            sender={data.conversations.find((c) => c.user === data.displayConversation).convo.sender} 
             backToContacts={backToContacts}
         />
     }
