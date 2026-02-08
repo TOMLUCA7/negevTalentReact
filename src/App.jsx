@@ -108,8 +108,8 @@ function App() {
       {/* exercise 2 */}
       {/* {data.currentPage === "Landing" ? <Landing name={data.user} store={data.store}/> : <Home store={data.store} currentPage={data.currentPage} shouldDiscount={data.shouldDiscount}/>} */}
 
-      {/* <Exercise1/>
-      <Exercise2/> */}
+      <Exercise1/>
+      <Exercise2/>
 
       {/* <DataFlowExercise1/> */}
 
