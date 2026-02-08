@@ -12,6 +12,8 @@ import Exercise1 from "../components/Exercise1";
 import Exercise2 from "../components/Exercise2";
 import DataFlowExercise1 from "../components/DataFlowExercise1";
 import DataFlowExercise2 from "../components/DataFlowExercise2";
+import ControlledTextarea from "../components/Textarea";
+import Textarea from "../components/Textarea";
 
   let companies = [
     { name: "Tesla", revenue: 140 },
@@ -111,7 +113,9 @@ function App() {
 
       {/* <DataFlowExercise1/> */}
 
-      <DataFlowExercise2/>
+      {/* <DataFlowExercise2/> */}
+
+      <Textarea/>
     </>
   )
 }
