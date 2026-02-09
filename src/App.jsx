@@ -15,6 +15,7 @@ import DataFlowExercise2 from "../components/DataFlowExercise2";
 import ControlledTextarea from "../components/Textarea";
 import Textarea from "../components/Textarea";
 import DisplayTimeuseEffect from "../components/DisplayTimeuseEffect";
+import FetchesPosts from "../components/FetchesPosts";
 
   let companies = [
     { name: "Tesla", revenue: 140 },
@@ -120,7 +121,7 @@ function App() {
 
       {/* <DisplayTimeuseEffect/> */}
 
-      
+      {/* <FetchesPosts/> */}
     </>
   )
 }
