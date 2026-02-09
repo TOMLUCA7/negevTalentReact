@@ -121,7 +121,7 @@ function App() {
 
       {/* <DisplayTimeuseEffect/> */}
 
-      {/* <FetchesPosts/> */}
+      <FetchesPosts/>
     </>
   )
 }

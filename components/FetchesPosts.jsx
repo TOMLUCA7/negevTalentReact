@@ -32,15 +32,15 @@ const FetchesPosts = () => {
     <>
         <h1 style={{textAlign:'center'}}>Top posts</h1>
         <div style={{display: 'flex', flexWrap: "wrap", gap: '20px'}}>
-        {posts.filter((post) => post.id <= 10).map((post) => (
-            <div 
-                style={{width: '400px', padding: '20px', border: '1px solid', textAlign: 'center'}} 
-                key={post.id}
-            >
-            <h4>{post.title}</h4>
-            <p>{post.body}</p>
-            </div>
-        )) }
+            {posts.filter((post) => post.id <= 10).map((post) => (
+                <div 
+                    style={{width: '400px', padding: '20px', border: '1px solid', textAlign: 'center'}} 
+                    key={post.id}
+                >
+                <h4>{post.title}</h4>
+                <p>{post.body}</p>
+                </div>
+            )) }
         </div>
     </>
   )
